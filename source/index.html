@@ -5,23 +5,28 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт Энержи.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип компании фото">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип компании фото">
+      <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Логотип компании фото">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span>Открыть меню</span>
+      <button class="main-nav__toggle button__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="/">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -35,12 +40,12 @@
   </header>
 
   <main class="main-container">
-    <h1>Специальное питание для любимых питомцев</h1>
+    <h1 class="visually-hidden">Специальное питание для любимых питомцев</h1>
     <section class="promo">
       <h2 class="promo-title">Функциональное питание для котов</h2>
       <p class="promo-slogan">Занялся собой? Займись котом!</p>
       <img class="promo__image" src="#" width="280" height="320" alt="">
-      <a class="promo__button" href="#">подобрать программу</a>
+      <a class="promo__button" href="form.html">подобрать программу</a>
     </section>
     <section class="features">
       <h2>Выбор программы</h2>
@@ -49,7 +54,7 @@
           <h3 class="features__title features__title--slim">похудение</h3>
           <p class="features__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="features__link" href="#">каталог slim
+          <a class="features__link" href="catalog.html">каталог slim
             <svg class="features__link-icon" width="32" height="10" viewBox="0 0 32 12" fill="none"
               xmlns="http://www.w3.org/2000/svg"></svg>
           </a>
@@ -58,7 +63,7 @@
           <h3 class="features__title features__title--pro">набор массы</h3>
           <p class="features__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="features__link" href="#">каталог pro
+          <a class="features__link" href="catalog.html">каталог pro
             <svg class="features__link-icon" width="32" height="10" viewBox="0 0 32 12" fill="none"
               xmlns="http://www.w3.org/2000/svg"></svg>
           </a>
@@ -135,32 +140,34 @@
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="main-footer__logo-image" src="#" width="128" height="24" alt="Логотип компании энергичный кот.">
+    <a class="main-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="logo__image logo__image-footer--text-footer" src="#" width="128" height="24"
+        alt="Логотип компании энергичный кот.">
     </a>
-    <div class="main-footer__social social">
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <span>Мы в Контакте</span></a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Контакте</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-            <span>Мы в Ютубе</span></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
-            <span>Мы в Телеграме</span>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
           </a>
         </li>
       </ul>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__logo-icon" width="27" height="34"></svg>
-          <span>Логотип HTML Academy</span>
-        </a>
-      </div>
+    </section>
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <svg class="copyright__logo-icon" width="27" height="34"></svg>
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </a>
     </div>
   </footer>
 </body>

@@ -5,26 +5,30 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт Энержи.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип компании фото">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип компании фото">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span>Открыть меню</span>
+      <button class="main-nav__toggle button__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="/">Каталог продукции</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current" href="/">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -240,31 +244,35 @@
     <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
       <img class="main-footer__logo-image" src="#" width="128" height="24" alt="Логотип компании энергичный кот.">
     </a>
-    <div class="main-footer__social social">
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Мы в социальных сетя</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <span>Мы в Контакте</span>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Контакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-            <span>Мы в Ютубе</span>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
-            <span>Мы в Телеграме</span>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
           </a>
         </li>
       </ul>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__logo-icon" width="27" height="34"></svg>
-          <span>Логотип HTML Academy</span>
-        </a>
-      </div>
+    </section>
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <svg class="copyright__logo-icon" width="27" height="34"></svg>
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </a>
     </div>
+
   </footer>
 </body>
+
+</html>
