@@ -1,0 +1,114 @@
+.personal-date {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 1000%;
+    height: 2px;
+    background-color: @basic-green;
+    z-index: -1;
+  }
+}
+
+.personal-date__info {
+  display: inline-block;
+  padding: 0 20px;
+  margin-left: -20px;
+  margin-bottom: 35px;
+  font-family: @basic-fonts;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: @basic-black;
+  background-color: @basic-white;
+  z-index: 2;
+  width: 224px;
+}
+
+@media (min-width: @tablet-width) {
+  .personal-date {
+    position: relative;
+    margin-bottom: 67px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      height: 2px;
+      left: 50%;
+      right: 50%;
+      width: 100vw;
+      margin-right: -50vw;
+      margin-left: -50vw;
+      background-color: @basic-green;
+      z-index: -1;
+    }
+  }
+
+  .personal-date__group {
+    font-family: @basic-fonts;
+    font-weight: 400;
+    padding-left: 41px;
+    padding-right: 37px;
+  }
+
+  .personal-date__info {
+    display: inline-block;
+    width: 594px;
+    padding: 0 40px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 76px;
+    padding-left: 40px;
+    font-family: @basic-fonts;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: @basic-black;
+    background-color: @basic-white;
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .personal-date {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      height: 2px;
+      left: 50%;
+      right: 50%;
+      width: 100vw;
+      margin-right: -50vw;
+      margin-left: -50vw;
+      background-color: @basic-green;
+      z-index: -1;
+    }
+  }
+
+  .personal-date__group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+  }
+
+  .personal-date__info {
+    display: inline-block;
+    width: 600px;
+    padding: 0 40px;
+    margin-left: -40px;
+    margin-bottom: 76px;
+    padding-right: 0;
+    background-color: @basic-white;
+    z-index: 2;
+  }
+}

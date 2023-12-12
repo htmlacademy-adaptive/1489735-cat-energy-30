@@ -1,7 +1,37 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/common.scss";
 @import "./global/fonts.scss";
+@import "./global/mixins.scss";
 
 /* BLOCKS */
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/logo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/promo.scsa";
+@import "blocks/features.scss";
+@import "blocks/advantages.scss";
+@import "blocks/special.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-inner.scss";
+@import "blocks/product-item.scss";
+@import "blocks/additives.scss";
+@import "blocks/additives-gift.scss";
+@import "blocks/form.scss";
+@import "blocks/personal-date.scss";
+@import "blocks/comments.scss";
+@import "blocks/products.scss";
+@import "blocks/info-list.scss";
+@import "blocks/additive-item.scss";
+@import "blocks/show-more.scss";
+@import "blocks/location.scss";
+@import "blocks/main-container.scss";
+@import "blocks/page.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";

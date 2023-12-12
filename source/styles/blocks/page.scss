@@ -1,0 +1,42 @@
+.page {
+  height: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: @basic-black;
+  background-color: @basic-white;
+}
+
+@media (min-width: @desktop-width) {
+  .page__body--index .site-list__link {
+    color: @basic-white;
+
+    &:hover {
+      color: @basic-white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  .page__body--index .site-list__item--current::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: @basic-white;
+  }
+}
