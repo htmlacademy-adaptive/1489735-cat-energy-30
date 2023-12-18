@@ -1,0 +1,38 @@
+.special__title {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.special__description {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.special__value {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  text-align: center;
+}
+
+.special__text {
+  font-family: $basic-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $special-dark-grey;
+}
+
+.special__expenses {
+  color: $basic-black;
+  text-align: center;
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

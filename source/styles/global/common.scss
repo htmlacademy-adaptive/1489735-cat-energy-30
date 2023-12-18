@@ -10,12 +10,10 @@ body {
   flex-wrap: wrap;
   min-height: 100%;
   margin: 0;
-  font-family: @basic-fonts;
-  font-style: normal;
+  font-family: $basic-font;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-  background-color: @basic-white;
+  background-color: $basic-white;
 }
 
 img {

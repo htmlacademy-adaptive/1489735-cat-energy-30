@@ -1,109 +1,14 @@
-.main-inner {
-  overflow-x: hidden;
-}
-
-.main-inner__wrapper {
-  .wrapper();
-  margin-top: 27px;
-}
-
-.main-inner__title {
-  margin: 0;
-  margin-bottom: 37px;
-  font-family: @basic-fonts;
-  font-weight: 400;
+.main-inner__title--form {
+  font-family: $second-font;
   font-size: 36px;
   line-height: 36px;
-  color: @basic-black;
+  color: $basic-black;
 }
 
 .main-inner__info-form {
-  margin-bottom: 39px;
-  font-family: @basic-fonts;
-  font-weight: 400;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: @basic-black;
-}
-
-@media (min-width: @tablet-width) {
-  .main-inner__wrapper {
-    margin-top: 50px;
-
-    &--form {
-      margin-top: 50px;
-      padding-left: 71px;
-      padding-right: 67px;
-    }
-  }
-
-  .main-inner__title {
-    font-family: @basic-fonts;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    color: @basic-black;
-    margin-bottom: 54px;
-
-    &--catalog {
-      margin-bottom: 90px;
-    }
-
-    &--form {
-      margin-bottom: 56px;
-    }
-  }
-
-  .main-inner__info-form {
-    width: 328px;
-    margin-bottom: 66px;
-    font-family: @basic-fonts;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: @basic-black;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-inner__wrapper {
-    margin-top: 74px;
-
-    &--catalog {
-      width: 320px;
-    }
-
-    &--form {
-      padding-left: 110px;
-      padding-right: 110px;
-      margin-bottom: 65px;
-    }
-  }
-
-  .main-inner__title {
-    font-size: 60px;
-    line-height: 60px;
-    color: @basic-black;
-
-    &--catalog {
-      margin-bottom: 85px;
-    }
-
-    &--form {
-      margin-bottom: 56px;
-    }
-  }
-
-  .main-inner__info-form {
-    width: 323px;
-    margin: 0;
-    font-family: @basic-fonts;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: @basic-black;
-  }
+  color: $basic-black;
 }
