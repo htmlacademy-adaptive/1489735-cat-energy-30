@@ -1,0 +1,17 @@
+.product-item__title {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $other-dark-grey;
+  text-transform: uppercase;
+}
+
+.product-item__button {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+  background-color: $basic-green;
+}

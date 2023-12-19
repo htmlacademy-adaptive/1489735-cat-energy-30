@@ -1,0 +1,31 @@
+.additive-item__title {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.additive-item__label {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.additive-item__value {
+  font-family: $basic-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.additive-item__button {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+  background-color: $basic-green;
+}
