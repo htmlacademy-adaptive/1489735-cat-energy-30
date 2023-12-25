@@ -1,3 +1,44 @@
 .copyright {
   margin-top: 20px;
+
+  &__text {
+    display: inline-block;
+    width: 114px;
+    margin: 0;
+    vertical-align: middle;
+    font-family: $basic-font;
+    font-size: 16px;
+    line-height: 20px;
+    color: $special-dark-grey;
+  }
+}
+
+.copyright__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: $special-black;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .copyright__logo-icon {
+      fill: $basic-green;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

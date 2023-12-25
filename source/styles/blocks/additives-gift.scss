@@ -1,8 +1,32 @@
+.additives-gift {
+  position: relative;
+  width: 280px;
+  min-height: 290px;
+  padding: 187px 61px 43px 58px;
+  background-color: $basic-green;
+  background-image: url("../../images/backgrounds/gift_mobile@1x.jpg");
+  background-size: 280px auto;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 84px;
+    top: 58px;
+    left: 101px;
+    background-image: url("../../images/decorative_icons/icon_gift.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
 .additives-gift__slogan {
-  text-align: center;
+  margin: 0;
   font-family: $basic-font;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  background-color: $basic-green;
+  text-align: center;
 }

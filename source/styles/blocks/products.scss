@@ -1,3 +1,7 @@
 .products__wrapper {
   margin-bottom: 25px;
 }
+
+.products__lists {
+  @include list-reset();
+}

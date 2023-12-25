@@ -1,4 +1,13 @@
-.main-inner__title--form {
+.main-inner {
+  overflow-x: hidden;
+}
+
+.main-inner__wrapper {
+  @include wrapper();
+  margin-top: 27px;
+}
+
+.main-inner__title {
   font-family: $second-font;
   font-size: 36px;
   line-height: 36px;
