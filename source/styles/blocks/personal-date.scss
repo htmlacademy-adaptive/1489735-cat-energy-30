@@ -1,4 +1,14 @@
-.personal-date__info {
+.personal-date {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.personal-date__title {
+  display: inline-block;
+  padding: 0 20px;
+  margin-left: -20px;
+  margin-bottom: 35px;
   font-family: $second-font;
   font-size: 24px;
   line-height: 26px;

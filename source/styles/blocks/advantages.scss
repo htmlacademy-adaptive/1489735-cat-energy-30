@@ -1,11 +1,62 @@
+.advantages {
+  padding-top: 20px;
+}
+
+.advantages__wrapper {
+  @include wrapper();
+}
+
 .advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $second-font;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
 }
 
+.advantages__lists {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  margin-bottom: 20px;
+  padding-left: 80px;
+  background-size: 60px 60px;
+
+  &:last-child {
+    margin-bottom: 46px;
+  }
+
+  &--leaf {
+    background-image: url("../../images/decorative_icons/leaf_mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--tub {
+    background-image: url("../../images/decorative_icons/tub_mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--eat {
+    background-image: url("../../images/decorative_icons/eat_mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--alarm {
+    background-image: url("../../images/decorative_icons/alarm_mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .advantages__description {
+  padding-top: 2px;
+  padding-bottom: 4px;
+  width: 200px;
+  margin: 0;
   font-family: $basic-font;
   font-size: 14px;
   line-height: 18px;

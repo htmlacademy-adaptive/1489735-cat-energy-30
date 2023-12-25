@@ -1,7 +1,21 @@
-.logo {
-  padding-left: 20px;
-  display: inline-block;
-  padding-top: 10px;
-  height: 65px;
-  text-decoration: none;
+.logo__image {
+  margin-right: 30px;
+
+  &--icon {
+    width: 33px;
+    height: 38px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__image--text {
+  width: 101px;
+  height: 18px;
 }

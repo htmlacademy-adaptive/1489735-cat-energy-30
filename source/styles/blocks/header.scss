@@ -2,3 +2,11 @@
   background-color: $basic-white;
   box-sizing: border-box;
 }
+
+.header__logo {
+  padding-left: 20px;
+  display: inline-block;
+  padding-top: 10px;
+  height: 65px;
+  text-decoration: none;
+}
